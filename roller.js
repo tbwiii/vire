@@ -1,6 +1,6 @@
 (function (window) {
 
-  var actors, movies, title, button;
+  var actors, movies, title, button, refresh;
 
 
   actors= [
@@ -41,10 +41,11 @@
   ];
 
   title = document.getElementById('starting-point');
-  button = document.getElementById('new-round-btn');
+  newRoundBtn = document.getElementById('new-round-btn');
+  refreshBtn = document.getElementById('refresh-btn');
 
 
-  function roll() {
+  function roll () {
     var allOpts = actors.concat(movies);
 
     var randomIndex = Math.floor(Math.random() * ((allOpts.length - 1) - 0));
@@ -52,7 +53,13 @@
     title.innerHTML = allOpts[randomIndex]
   }
 
-  button.onclick = roll;
+  function refresh () {
+    location.reload(true);
+  }
+
+  newRoundBtn.onclick = roll;
+
+  refreshBtn.onclick = refresh;
 
 
 
