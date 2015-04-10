@@ -1,42 +1,51 @@
 (function (window) {
 
-  var actors, movies, title, button, refresh;
+  var actors, movies, title, fullList, button, refresh;
 
 
   actors= [
-    'Tom Cruise',
-    'Will Smith',
-    'Keanu Reeves',
+    'Angelina Jolie',
+    'Anthony Hopkins',
     'Brad Pitt',
-    'George Clooney',
-    'Tommy Lee Jones',
-    'Tom Hanks',
-    'Robin Williams',
-    'Christian Bale',
-    'Harrison Ford',
-    'Nic Cage',
-    'Kevin Bacon',
-    'Halle Berry',
-    'Drew Barrymore',
     'Cameron Diaz',
-    'Angelina Jolie'
+    'Christian Bale',
+    'Clint Eastwood',
+    'Drew Barrymore',
+    'Gary Oldman',
+    'George Clooney',
+    'Halle Berry',
+    'Harrison Ford',
+    'Jude Law',
+    'Keanu Reeves',
+    'Kevin Bacon',
+    'Nic Cage',
+    'Robert Downey Jr',
+    'Robin Williams',
+    'Tom Cruise',
+    'Tom Hanks',
+    'Tommy Lee Jones',
+    'Tommy Lee Jones',
+    'Will Smith'
   ],
 
   movies = [
+    'The Avengers',
     'Batman Begins',
     'The Dark Knight',
     'Fifth Element',
-    'The Avengers',
+    'Inception',
+    'Independence Day',
+    'Indiana Jones',
+    'Jurassic Park',
+    'The Lord of the Rings',
+    'The Matrix',
+    'Men in Black',
+    'Pirates of the Caribbean',
     'Star Wars',
     'Spider-Man',
     'Spider-Man 3',
-    'The Matrix',
-    'X-Men',
-    'Men in Black',
-    'Indiana Jones',
-    'Pirates of the Caribbean',
-    'The Lord of the Rings',
     'Top Gun',
+    'X-Men',
     'Zoolander'
   ];
 
@@ -44,13 +53,19 @@
   newRoundBtn = document.getElementById('new-round-btn');
   refreshBtn = document.getElementById('refresh-btn');
 
+  function makeList () {
+    fullList = actors.concat(movies);
+  }
+
 
   function roll () {
-    var allOpts = actors.concat(movies);
+    if (!fullList || fullList.length < 1) {
+      makeList();
+    }
 
-    var randomIndex = Math.floor(Math.random() * ((allOpts.length - 1) - 0));
+    var randomIndex = Math.floor(Math.random() * ((fullList.length - 1) - 0));
 
-    title.innerHTML = allOpts[randomIndex]
+    title.innerHTML = fullList.splice(randomIndex, 1);
   }
 
   function refresh () {
