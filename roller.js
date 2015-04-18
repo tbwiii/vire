@@ -51,10 +51,15 @@
 
   title = document.getElementById('starting-point');
   newRoundBtn = document.getElementById('new-round-btn');
-  refreshBtn = document.getElementById('refresh-btn');
+  updateBtn = document.getElementById('refresh-btn'),
+  modal = document.getElementById('modal'),
+  reloadButton = document.getElementById('reload-button'),
+  cancelReload = document.getElementById('cancel-reload');
 
   function makeList () {
     fullList = actors.concat(movies);
+
+    return;
   }
 
 
@@ -66,16 +71,34 @@
     var randomIndex = Math.floor(Math.random() * ((fullList.length - 1) - 0));
 
     title.innerHTML = fullList.splice(randomIndex, 1);
+
+    return;
+  }
+
+  function toggleModal () {
+
+    if (modal.style.display === "none") {
+      modal.style.display = "block"
+    } else {
+      modal.style.display = "none"
+    }
+
+    return;
   }
 
   function refresh () {
     location.reload(true);
+
+    return true;
   }
 
   newRoundBtn.onclick = roll;
 
-  refreshBtn.onclick = refresh;
+  updateBtn.onclick = toggleModal;
 
+  cancelReload.onclick = toggleModal;
+
+  reloadButton.onclick = refresh;
 
 
 })(window)

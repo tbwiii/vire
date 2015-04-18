@@ -11,15 +11,29 @@
   <title>Movie Game</title>
 
   <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+      }
+    }
+
     body {
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
 
+    body, h1, p {
+        font-family: helvetica, arial, sans-serif;
+    }
+
     h1 {
       color: #343434;
-      font-family: helvetica, arial, sans-serif;
       position: absolute;
       text-align: center;
       top: 32%;
@@ -46,6 +60,38 @@
       width: 5rem;
       height: 5rem;
     }
+
+    .modal {
+      background: #fff;
+      border-radius: 3px;
+      box-shadow: 0 0 20px 4px rgba(0,0,0,0.14);
+      color: #555;
+      font-size: 1.5em;
+      left: 10%;
+      padding: 20px 20px 40px;
+      position: absolute;
+      text-align: center;
+      top: 30%;
+      width: 80%;
+    }
+
+    .modal-button {
+      background: transparent;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 1em 1.5em;
+      margin: 0 1.5em;
+    }
+
+    .mb-yes {
+      background: #44C468;
+    }
+
+    .mb-no {
+      background: #F7463D;
+    }
   </style>
 </head>
 <body>
@@ -54,6 +100,12 @@
     <h1 id="starting-point"></h1>
 
     <button id="new-round-btn">New Round</button>
+
+    <div id="modal" class="modal" style="display: none;">
+      <p>Check for an update?</p>
+      <button id="reload-button" class="modal-button mb-yes">Yes</button>
+      <button id="cancel-reload" class="modal-button mb-no">No</button>
+    </div>
 
 <script src="roller.js"></script>
 </body>
