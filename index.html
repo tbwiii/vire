@@ -117,9 +117,12 @@
       <button id="reload-button" class="modal-button mb-yes">Yes</button>
       <button id="cancel-reload" class="modal-button mb-no">No</button>
 
-      <span class="version-number">v0.6.0</span>
+      <span class="version-number">v0.7.0</span>
     </div>
 
-<script src="roller.js"></script>
+<script>
+  var cachebuster = Math.round(new Date().getTime() / 1000);
+  document.write('<scr'+'ipt type="text/javascript" src="./roller.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+</script>
 </body>
 </html>
