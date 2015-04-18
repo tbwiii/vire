@@ -12,9 +12,9 @@
     'Christian Bale',
     'Clint Eastwood',
     'Clive Owen',
-    'Daniel Day Lewis'
+    'Daniel Day Lewis',
     'Drew Barrymore',
-    'Ed Norton'
+    'Ed Norton',
     'Emily Blunt',
     'Emma Stone',
     'Ewan McGregor',
@@ -48,9 +48,9 @@
     'Robert DeNiro',
     'Robert Downey Jr',
     'Robin Williams',
-    'Russell Crowe'
+    'Russell Crowe',
     'Ryan Reynolds',
-    'Samuel L Jackson'
+    'Samuel L Jackson',
     'Tom Cruise',
     'Tom Hanks',
     'Tom Hardy',
@@ -72,7 +72,7 @@
     'Pirates of the Caribbean',
     'Star Wars',
     'Spider-Man',
-    'Tombstone'
+    'Tombstone',
     'Top Gun',
     'X-Men',
     'Zoolander'
