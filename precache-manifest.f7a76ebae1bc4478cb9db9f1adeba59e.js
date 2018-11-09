@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/vire/static/css/main.779f8bd4.chunk.css"
   },
   {
-    "revision": "d7bcf8262a6a6e4ef87d9b1eabe9617b",
+    "revision": "e09de73a5e328adb0aa903fe9a595399",
     "url": "/vire/index.html"
   }
 ];
