@@ -16,5 +16,5 @@ export default [
   "Zoolander",
   "Guardians of the Galaxy",
   "Ready Player One",
-  "The Shape of Twater"
+  "The Shape of Water"
 ];

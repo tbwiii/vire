@@ -1,10 +1,12 @@
 {
-  "name": "vire-react",
+  "name": "vire",
   "version": "0.2.0",
   "description": "A simple React app for kicking off rounds of The Movie Game",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "http://tbwiii.github.io/vire",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-scripts": "2.0.3"
@@ -14,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
