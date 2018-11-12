@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Menu from "./components/Menu";
 import Current from "./components/Current";
 import Actors from "./data/actors";
 import Movies from "./data/movies";
@@ -27,11 +26,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="app-title">The Movie Game</h1>
-
-        <Menu onNewRound={this.handleNewRound.bind(this)} />
-
-        <Current current={this.state.roundList[this.state.roundCount]} />
+        <div className="clapperboard" onClick={this.handleNewRound.bind(this)}>
+          <h1 className="app-title">The Movie Game</h1>
+          <Current
+            current={this.state.roundList[this.state.roundCount]}
+            onNewRound={this.handleNewRound.bind(this)}
+          />
+        </div>
       </div>
     );
   }
