@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/vire/static/js/runtime~main.a12d5692.js"
   },
   {
-    "revision": "746efbfa419b6d8ab0b2",
-    "url": "/vire/static/js/main.746efbfa.chunk.js"
+    "revision": "a25011a754973ce9faa1",
+    "url": "/vire/static/js/main.a25011a7.chunk.js"
   },
   {
     "revision": "4d6953bae71cc0bed0c5",
     "url": "/vire/static/js/1.4d6953ba.chunk.js"
   },
   {
-    "revision": "746efbfa419b6d8ab0b2",
-    "url": "/vire/static/css/main.8dbd91ba.chunk.css"
+    "revision": "a25011a754973ce9faa1",
+    "url": "/vire/static/css/main.0f366f3d.chunk.css"
   },
   {
-    "revision": "41b328cc1ebf8a6184caf77bcb1a39f9",
+    "revision": "2d89f00beaf5351612473efb399f06e1",
     "url": "/vire/index.html"
   }
 ];

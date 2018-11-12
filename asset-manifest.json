@@ -1,13 +1,13 @@
 {
-  "main.css": "/vire/static/css/main.8dbd91ba.chunk.css",
-  "main.js": "/vire/static/js/main.746efbfa.chunk.js",
-  "main.js.map": "/vire/static/js/main.746efbfa.chunk.js.map",
+  "main.css": "/vire/static/css/main.0f366f3d.chunk.css",
+  "main.js": "/vire/static/js/main.a25011a7.chunk.js",
+  "main.js.map": "/vire/static/js/main.a25011a7.chunk.js.map",
   "static/js/1.4d6953ba.chunk.js": "/vire/static/js/1.4d6953ba.chunk.js",
   "static/js/1.4d6953ba.chunk.js.map": "/vire/static/js/1.4d6953ba.chunk.js.map",
   "runtime~main.js": "/vire/static/js/runtime~main.a12d5692.js",
   "runtime~main.js.map": "/vire/static/js/runtime~main.a12d5692.js.map",
-  "static/css/main.8dbd91ba.chunk.css.map": "/vire/static/css/main.8dbd91ba.chunk.css.map",
+  "static/css/main.0f366f3d.chunk.css.map": "/vire/static/css/main.0f366f3d.chunk.css.map",
   "index.html": "/vire/index.html",
-  "precache-manifest.491090ddbb90f190414c665160b49aae.js": "/vire/precache-manifest.491090ddbb90f190414c665160b49aae.js",
+  "precache-manifest.d4da3bf4a4f1a76c3832382703aad74b.js": "/vire/precache-manifest.d4da3bf4a4f1a76c3832382703aad74b.js",
   "service-worker.js": "/vire/service-worker.js"
 }
